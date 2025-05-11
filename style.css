@@ -1,45 +1,167 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
 body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa; /* Soft off-white background */
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Container for page content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header section */
 header {
-  background: #1e1e2f;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+    background-color: #3d4a53; /* Muted dark blue */
+    padding: 20px 0;
+    color: #fff;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+header .name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-h1, h2 {
-  margin-bottom: 0.5rem;
+header nav ul {
+    display: flex;
+    justify-content: space-around;
 }
 
-.project {
-  margin-bottom: 1.5rem;
+header nav ul li {
+    list-style-type: none;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: color 0.3s;
 }
 
-a:hover {
-  text-decoration: underline;
+header nav ul li a:hover {
+    color: #e4e5e9; /* Light gray hover effect */
 }
 
+/* Hero Section */
+.hero {
+    background-color: #cfd8dc; /* Muted blue-gray */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #263238; /* Darker gray-blue */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #455a64; /* Muted blue-gray */
+}
+
+/* About Section */
+.about {
+    background-color: #eceff1; /* Light gray-blue */
+    padding: 60px 0;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #263238;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #607d8b; /* Muted blue */
+}
+
+/* Projects Section */
+.projects {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #263238;
+}
+
+.project-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 2rem;
+    color: #3d4a53;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #607d8b;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #eceff1;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #263238;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #607d8b;
+}
+
+.contact a {
+    color: #3d4a53;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #263238;
+}
+
+/* Footer Section */
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: #ddd;
-  margin-top: 2rem;
+    background-color: #3d4a53; /* Dark blue-gray */
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
 }
