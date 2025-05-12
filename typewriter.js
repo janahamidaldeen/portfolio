@@ -1,5 +1,5 @@
 const typewriterElement = document.getElementById("typewriter");
-const words = ["developer", "innovator", "entrepreneur", "speaker", "maker"];
+const words = ["developer", "engineer", "innovator", "entrepreneur", "maker", "leader"];
 let wordIndex = 0;
 let charIndex = 0;
 let typing = true;
@@ -13,7 +13,7 @@ function typeEffect() {
 
     if (charIndex === currentWord.length) {
       typing = false;
-      setTimeout(typeEffect, 1200); // pause before deleting
+      setTimeout(typeEffect, 800); // pause before deleting
     } else {
       setTimeout(typeEffect, 100);
     }
@@ -25,7 +25,7 @@ function typeEffect() {
     if (charIndex === 0) {
       typing = true;
       wordIndex = (wordIndex + 1) % words.length;
-      setTimeout(typeEffect, 300);
+      setTimeout(typeEffect, 100);
     } else {
       setTimeout(typeEffect, 50);
     }

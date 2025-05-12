@@ -129,7 +129,24 @@ header {
   margin-bottom: 15px;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  
+  display: flex; /* horizontal alignment of children */
+  gap: 20px; /* space between image and text column */
+  align-items: flex-start; /* aligns top of image and text */
 }
+
+.project-image {
+  max-width: 200px; /* adjust as needed */
+  height: auto;
+  border-radius: 6px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column; /* vertical alignment */
+  justify-content: flex-start;
+}
+
 
 /* About section */
 #show-more {
@@ -157,22 +174,28 @@ header {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   overflow: hidden;
+  padding-left: 20px; /* Add padding to the left */
 }
 
 .extra-box img {
   width: 120px;
   height: 120px;
   object-fit: cover;
+  border-radius: 10%; /* This makes the image rounded */
 }
 
 .extra-desc {
   padding: 15px;
+  flex-grow: 1;
 }
 
-.extra-desc h4 {
-  margin-top: 0;
-  color: #444;
+.extra-desc p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
 }
+
 
 /* Footer */
 footer.contact {
@@ -180,4 +203,89 @@ footer.contact {
   padding: 40px 20px;
   background-color: #e6eef0;
   color: #555;
+}
+
+/* Project Details Page Styling */
+/* Scope all styles to project-details page only */
+main.project-details {
+  max-width: 960px;
+  margin: 120px auto 60px auto; /* accounts for fixed navbar */
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+main.project-details h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+main.project-details p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+main.project-details a {
+  color: #007799;
+  text-decoration: underline;
+}
+
+main.project-details .project-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+main.project-details .button {
+  display: inline-block;
+  position: relative;
+  top: -10px; /* Adjust this to move the button up */
+  padding: 10px 20px;
+  background-color: #b6d1da;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+
+main.project-details .button:hover {
+  background-color: #9dbfcf;
+}
+
+/* Responsive tweaks for project page only */
+@media (max-width: 600px) {
+  main.project-details {
+    padding: 20px 15px;
+    margin-top: 100px;
+  }
+
+  main.project-details h1 {
+    font-size: 1.6rem;
+  }
+
+  main.project-details p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Video container styling */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
