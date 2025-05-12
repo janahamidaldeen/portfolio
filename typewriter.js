@@ -1,5 +1,5 @@
 const typewriterElement = document.getElementById("typewriter");
-const words = ["developer", "engineer", "innovator", "entrepreneur", "maker", "leader"];
+const words = ["a developer", "an engineer", "an innovator", "an entrepreneur", "a maker", "a leader"];
 let wordIndex = 0;
 let charIndex = 0;
 let typing = true;
