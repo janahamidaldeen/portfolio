@@ -18,23 +18,38 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f7f7f7; /* adjust as needed for muted calm colors */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.site-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
 .nav-menu {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
 
 .nav-menu li a {
-  font-weight: bold;
-  padding: 8px 16px;
-  transition: color 0.3s;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-menu li a:hover {
-  color: #007799;
+  color: #0077b6;
 }
 
 /* Section styling */
